@@ -62,3 +62,32 @@ Follow the following steps to create and run the project:
  ```bash
  python manage.py runserver
  ```
+
+ ## Create a model
+ Create a model named Products in the app as follows:
+ ```bash
+ class Products(models.Model):
+  name = models.CharField(max_length=100)#The name of the product
+  description = models.CharField(max_length=100)#The product description
+  price = models.DecimalField(max_digits=10, decimal_places=2)#The price of the product
+```
+
+## Create main.py
+
+This file is created inside the app folder which in thes case is the prodects folder. This where the GET and POST endpoints are created.
+
+## Create schemas.py
+
+This file is created inside the app folder which in thes case is the prodects folder. This is where the schema of the modcedl created is created.
+
+```bash
+from pydantic import BaseModel
+
+class ProductsResponse(BaseModel):
+    name: str
+    description: str
+    price: float
+    
+    class Config:
+        orm_mode = True
+```
