@@ -34,7 +34,31 @@ Follow the following steps to create and run the project:
  ```
 
  ### 4. Install requirements
- 
+
  ```bash
  pip install requests fastapi uvicorn
+ ```
+
+ ### 5. Install django
+
+ ```bash
+ py -m pip install Django
+ ```
+
+ ### 6. Create a project
+
+ ```bash
+ django-admin startproject ProductResourse
+ ```
+
+ ### 7. Create app
+
+ ```bash
+ django-admin startapp products
+ ```
+
+ ### 8. Start the development server
+
+ ```bash
+ python manage.py runserver
  ```
