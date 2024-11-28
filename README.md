@@ -66,7 +66,7 @@ Follow the following steps to create and run the project:
  ## Create a model
  Create a model named Products in the app as follows:
  ```bash
- class Products(models.Model):
+ class Product(models.Model):
   name = models.CharField(max_length=100)#The name of the product
   description = models.CharField(max_length=100)#The product description
   price = models.DecimalField(max_digits=10, decimal_places=2)#The price of the product
