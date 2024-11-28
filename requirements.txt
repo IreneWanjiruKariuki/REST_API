@@ -1,0 +1,2 @@
+annotated-types==0.7.0
+fastapi==0.115.5
